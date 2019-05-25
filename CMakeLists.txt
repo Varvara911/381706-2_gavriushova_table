@@ -13,15 +13,12 @@ if(NOT CMAKE_BUILD_TYPE) # ïðîâåðêà èìåþùèõñÿ ó êîìïèëÿ
   set(CMAKE_BUILD_TYPE Release) #Åñëè íåò òî óñòàíàâëèâàåì Release
 endif()
 
-#(${CMAKE_CURRENT_SOURSE_DIR}/tableslib)
-
-##include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gtest)
-
-include_directories(tableslib)
+include_directories(${CMAKE_CURRENT_SOURSE_DIR}/tableslib)
 add_subdirectory(tableslib)
-
-include_directories(gtest)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gtest)
 add_subdirectory(gtest)
+
+
 
 add_subdirectory(tables)
 add_subdirectory(tablestest)
