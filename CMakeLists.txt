@@ -13,7 +13,7 @@ if(NOT CMAKE_BUILD_TYPE) # ïðîâåðêà èìåþùèõñÿ ó êîìïèëÿ
   set(CMAKE_BUILD_TYPE Release) #Åñëè íåò òî óñòàíàâëèâàåì Release
 endif()
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/tableslib)
+include_directories($./tableslib)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gtest)
 
 
