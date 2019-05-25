@@ -8,6 +8,6 @@ before_script:
 script:
   - cmake ../381706-2_gavriushova_table
   - make -j
-  - ./tablestest/tablestest
+  - ./tablestest
 notifications:
   email: false
