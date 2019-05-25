@@ -154,7 +154,7 @@ template <class T>
 TElem<T>& TTableS<T>::Search(string _key)
 {
 	for (int i = 0; i < count; i++)
-		if (node[i].GetKey()0 == _key)
+		if (node[i].GetKey() == _key)
 			return node[i];
 	return zero;
 }
