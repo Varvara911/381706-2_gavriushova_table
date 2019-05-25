@@ -162,7 +162,7 @@ TElem<T>& TTableS<T>::Search(string _key)
 template <class T>
 int& TTableS<T>::operator [] (string _key)
 {
-	return Search(_key).GetData()
+	return Search(_key).GetData();
 }
 
 
