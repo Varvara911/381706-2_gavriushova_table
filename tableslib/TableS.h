@@ -7,7 +7,7 @@
 using namespace std;
 
 template <class T>
-class TTableS
+class TTableS : public TElem<TElem<T> >
 {
 protected:
 	TElem<T>* node;
