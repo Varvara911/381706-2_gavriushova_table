@@ -54,7 +54,7 @@ public:
 
 	T& GetData()
 	{
-		retern data;
+		return data;
 	};
 
 	void SetData(const T& _data)
