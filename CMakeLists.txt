@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8) #Ïðîâåðêà âåðñèè CMake.
 
 set(PROJECT_NAME 381706-2_gavriushova_table) #Ñîçäàåì îáû÷íóþ ëîêàëüíóþ ïåðåìåííóþ ñ èìåíåì ïðîåêòà
-project(${PROJECT_NAME} C) # Íàçâàíèå ïðîåêòà
+project(${PROJECT_NAME} ) # Íàçâàíèå ïðîåêòà
 
 set(tables tables)
 set(tableslib tableslib)
