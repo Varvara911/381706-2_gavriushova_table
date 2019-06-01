@@ -3,4 +3,4 @@ file(GLOB hdrs "*.h*") #Äîáàâëÿåì â ïåğåìåííóş hdrs âñå �
 file(GLOB srcs "*.cpp")#Äîáàâëÿåì â ïåğåìåííóş srcs âñå ôàéëû ñ ğàñøèğåíèåì .h
 
 add_executable(${tables} ${srcs} ${hdrs})
-target_link_libraries(${tables})
+target_link_libraries(${tables} ${tableslib})
