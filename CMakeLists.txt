@@ -14,16 +14,16 @@ if(NOT CMAKE_BUILD_TYPE) # ïðîâåðêà èìåþùèõñÿ ó êîìïèëÿ
 endif()
 
 include_directories(${CMAKE_CURRENT_SOURSE_DIR}/tableslib)
-add_subdirectory(tableslib)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gtest)
-add_subdirectory(gtest)
 
 
 
 add_subdirectory(tables)
+add_subdirectory(tableslib)
 add_subdirectory(tablestest)
+add_subdirectory(gtest)
 
 
 
-##file(GLOB hdrs "*.h*") #Äîáàâëÿåì â ïåðåìåííóþ hdrs âñå ôàéëû ñ ðàñøèðåíèåì .h
-##file(GLOB srcs "*.cpp") #Äîáàâëÿåì â ïåðåìåííóþ srcs âñå ôàéëû ñ ðàñøèðåíèåì .h
+file(GLOB hdrs "*.h*") #Äîáàâëÿåì â ïåðåìåííóþ hdrs âñå ôàéëû ñ ðàñøèðåíèåì .h
+file(GLOB srcs "*.cpp") #Äîáàâëÿåì â ïåðåìåííóþ srcs âñå ôàéëû ñ ðàñøèðåíèåì .h
